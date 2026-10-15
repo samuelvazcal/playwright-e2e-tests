@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Playwright E2E Tests with AI Capatibilities incl MCM",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "demo": "npx playwright test tests/demo/mytest.spec.ts --headed",
+    "demo:firefox": "npx playwright test --project=firefox"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
