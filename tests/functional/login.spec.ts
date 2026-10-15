@@ -14,7 +14,7 @@ test("Should login successfully", async ({ page }) => {
     await page.getByLabel("Password").fill("ThisIsNotAPassword");
     await page.getByRole("button").click()
     // 4. Assert
-    await expect(page.getByText("Make Appointment")).toBeVisible
+    expect(page.getByText("Make Appointment")).toBeVisible
 
 })
 
