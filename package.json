@@ -4,9 +4,10 @@
   "description": "Playwright E2E Tests with AI Capatibilities incl MCM",
   "main": "index.js",
   "scripts": {
+    "element-interaction": "npx playwright test tests/demo/ele.handling.make.appt.spec.ts --headed",
     "login": "npx playwright test tests/functional/login.spec.ts --headed",
     "demo": "npx playwright test tests/demo/mytest.spec.ts --headed",
-    "make-appt": "npx playwright test tests/demo/make.appointment.spec.ts --headed",
+    "make-appt": "npx playwright test tests/functional/make.appointment.spec.ts --headed",
     "demo:firefox": "npx playwright test --project=firefox"
   },
   "keywords": [],
